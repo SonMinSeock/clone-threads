@@ -1,14 +1,21 @@
 import AppLayout from "./layout/AppLayout";
 import GlobalStyle from "./styles/GlobalStyle";
+import Post from "./components/Post";
 
 function App() {
   return (
     <>
       <GlobalStyle />
       <AppLayout>
-        <div className="App">
-          <h1>Hello Threads Clone!</h1>
-        </div>
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </AppLayout>
     </>
   );

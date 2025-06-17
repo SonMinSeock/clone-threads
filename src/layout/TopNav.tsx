@@ -16,11 +16,12 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 56px;
   padding: 0 16px;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 `;
@@ -28,13 +29,17 @@ const Wrapper = styled.header`
 const Logo = styled.div`
   font-size: 24px;
   font-weight: bold;
+  @media (max-width: 700px) {
+    width: 50%;
+    text-align: end;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 16px;
   font-weight: 600;
 
-  @media (min-width: 700px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -48,5 +53,9 @@ const LoginButton = styled.button`
 
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 700px) {
+    width: 50%;
+    text-align: end;
   }
 `;
