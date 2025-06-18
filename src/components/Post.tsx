@@ -1,4 +1,3 @@
-// components/Post.tsx
 import styled from "styled-components";
 import { CiMenuKebab } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";

@@ -3,19 +3,14 @@ import GlobalStyle from "./styles/GlobalStyle";
 import Post from "./components/Post";
 
 function App() {
+  const postList = Array.from({ length: 9 }); // 더미, 테스트용
   return (
     <>
       <GlobalStyle />
       <AppLayout>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        {postList.map((_, i) => (
+          <Post key={i} />
+        ))}
       </AppLayout>
     </>
   );
